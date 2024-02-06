@@ -455,7 +455,7 @@
             ],
             "required": [
                 "Type",
-                "Iterator"
+                "ItemProcessor"
             ],
             "additionalProperties": false
         },
