@@ -51,62 +51,144 @@
                                 "$ref": "#/definitions/choice/definitions/Operator"
                             }
                         },
+                        "BooleanEquals": {
+                            "type": "boolean"
+                        },
+                        "BooleanEqualsPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
+                        },
+                        "IsBoolean": {
+                            "type": "boolean"
+                        },
+                        "IsNull": {
+                            "type": "boolean"
+                        },
+                        "IsNumeric": {
+                            "type": "boolean"
+                        },
+                        "IsPresent": {
+                            "type": "boolean"
+                        },
+                        "IsString": {
+                            "type": "boolean"
+                        },
+                        "IsTimestamp": {
+                            "type": "boolean"
+                        },
+                        "Not": {
+                            "$ref": "#/definitions/choice/definitions/Operator"
+                        },
                         "Or": {
                             "type": "array",
                             "items": {
                                 "$ref": "#/definitions/choice/definitions/Operator"
                             }
                         },
-                        "Not": {
-                            "$ref": "#/definitions/choice/definitions/Operator"
-                        },
-                        "BooleanEquals": {
-                            "type": "boolean"
-                        },
                         "NumericEquals": {
                             "type": "number"
+                        },
+                        "NumericEqualsPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
                         },
                         "NumericGreaterThan": {
                             "type": "number"
                         },
+                        "NumericGreaterThanPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
+                        },
                         "NumericGreaterThanEquals": {
                             "type": "number"
+                        },
+                        "NumericGreaterThanEqualsPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
                         },
                         "NumericLessThan": {
                             "type": "number"
                         },
+                        "NumericLessThanPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
+                        },
                         "NumericLessThanEquals": {
                             "type": "number"
+                        },
+                        "NumericLessThanEqualsPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
                         },
                         "StringEquals": {
                             "type": "string"
                         },
+                        "StringEqualsPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
+                        },
                         "StringGreaterThan": {
                             "type": "string"
+                        },
+                        "StringGreaterThanPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
                         },
                         "StringGreaterThanEquals": {
                             "type": "string"
                         },
+                        "StringGreaterThanEqualsPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
+                        },
                         "StringLessThan": {
                             "type": "string"
+                        },
+                        "StringLessThanPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
                         },
                         "StringLessThanEquals": {
                             "type": "string"
                         },
+                        "StringLessThanEqualsPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
+                        },
                         "TimestampEquals": {
                             "type": "string"
+                        },
+                        "TimestampEqualsPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
                         },
                         "TimestampGreaterThan": {
                             "type": "string"
                         },
+                        "TimestampGreaterThanPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
+                        },
                         "TimestampGreaterThanEquals": {
                             "type": "string"
+                        },
+                        "TimestampGreaterThanEqualsPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
                         },
                         "TimestampLessThan": {
                             "type": "string"
                         },
+                        "TimestampLessThanPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
+                        },
                         "TimestampLessThanEquals": {
                             "type": "string"
+                        },
+                        "TimestampLessThanEqualsPath": {
+                            "type": "string",
+                            "pattern": "^\\$\\.\\S+"
                         }
                     },
                     "oneOf": [
@@ -122,6 +204,41 @@
                         },
                         {
                             "required": [
+                                "BooleanEqualsPath"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "IsBoolean"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "IsNull"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "IsNumeric"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "IsPresent"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "IsString"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "IsTimestamp"
+                            ]
+                        },
+                        {
+                            "required": [
                                 "Not"
                             ]
                         },
@@ -132,7 +249,17 @@
                         },
                         {
                             "required": [
+                                "NumericEqualsPath"
+                            ]
+                        },
+                        {
+                            "required": [
                                 "NumericGreaterThan"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "NumericGreaterThanPath"
                             ]
                         },
                         {
@@ -142,12 +269,27 @@
                         },
                         {
                             "required": [
+                                "NumericGreaterThanEqualsPath"
+                            ]
+                        },
+                        {
+                            "required": [
                                 "NumericLessThan"
                             ]
                         },
                         {
                             "required": [
+                                "NumericLessThanPath"
+                            ]
+                        },
+                        {
+                            "required": [
                                 "NumericLessThanEquals"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "NumericLessThanEqualsPath"
                             ]
                         },
                         {
@@ -162,7 +304,17 @@
                         },
                         {
                             "required": [
+                                "StringEqualsPath"
+                            ]
+                        },
+                        {
+                            "required": [
                                 "StringGreaterThan"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "StringGreaterThanPath"
                             ]
                         },
                         {
@@ -172,7 +324,17 @@
                         },
                         {
                             "required": [
+                                "StringGreaterThanEqualsPath"
+                            ]
+                        },
+                        {
+                            "required": [
                                 "StringLessThan"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "StringLessThanPath"
                             ]
                         },
                         {
@@ -182,7 +344,22 @@
                         },
                         {
                             "required": [
+                                "StringLessThanEqualsPath"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "StringMatches"
+                            ]
+                        },
+                        {
+                            "required": [
                                 "TimestampEquals"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "TimestampEqualsPath"
                             ]
                         },
                         {
@@ -192,7 +369,17 @@
                         },
                         {
                             "required": [
+                                "TimestampGreaterThanPath"
+                            ]
+                        },
+                        {
+                            "required": [
                                 "TimestampGreaterThanEquals"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "TimestampGreaterThanEqualsPath"
                             ]
                         },
                         {
@@ -202,7 +389,17 @@
                         },
                         {
                             "required": [
+                                "TimestampLessThanPath"
+                            ]
+                        },
+                        {
+                            "required": [
                                 "TimestampLessThanEquals"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "TimestampLessThanEqualsPath"
                             ]
                         }
                     ]
