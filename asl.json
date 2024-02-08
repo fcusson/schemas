@@ -528,6 +528,9 @@
                         "null"
                     ]
                 },
+                "ResultSelector": {
+                    "type": "object"
+                },
                 "ItemSelector": {
                     "type": "object"
                 },
@@ -694,6 +697,9 @@
                         "string",
                         "null"
                     ]
+                },
+                "ResultSelector": {
+                    "type": "object"
                 },
                 "Branches": {
                     "type": "array",
@@ -925,6 +931,9 @@
                         "string",
                         "null"
                     ]
+                },
+                "ResultSelector": {
+                    "type": "object"
                 },
                 "Retry": {
                     "type": "array",
