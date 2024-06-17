@@ -568,6 +568,24 @@
                                         }
                                     }
                                 },
+                                "InputType": {
+                                    "oneOf": [
+                                        {
+                                            "properties": {
+                                                "InputType": {
+                                                    "not": {
+                                                        "enum": [
+                                                            "CSV"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "required": [
+                                                "CSVHeaderLocation"
+                                            ]
+                                        }
+                                    ]
+                                },
                                 "CSVHeaderLocation": {
                                     "required": [
                                         "InputType"
