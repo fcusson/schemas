@@ -557,9 +557,6 @@
                             },
                             "dependencies": {
                                 "CSVHeader": {
-                                    "required": [
-                                        "CSVHeaderLocation"
-                                    ],
                                     "properties": {
                                         "CSVHeaderLocation": {
                                             "enum": [
@@ -577,8 +574,7 @@
                                         }
                                     }
                                 }
-                            },
-                            "additionalProperties": true
+                            }
                         },
                         "Resource": {
                             "oneOf": [
