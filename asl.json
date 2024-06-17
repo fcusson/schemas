@@ -547,9 +547,27 @@
                                         "FIRST_ROW",
                                         "GIVEN"
                                     ]
+                                },
+                                "CSVHeader": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
                                 }
                             },
                             "dependencies": {
+                                "CSVHeader": {
+                                    "required": [
+                                        "CSVHeaderLocation"
+                                    ],
+                                    "properties": {
+                                        "CSVHeaderLocation": {
+                                            "enum": [
+                                                "GIVEN"
+                                            ]
+                                        }
+                                    }
+                                },
                                 "CSVHeaderLocation": {
                                     "properties": {
                                         "InputType": {
