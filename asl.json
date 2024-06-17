@@ -557,6 +557,9 @@
                             },
                             "dependencies": {
                                 "CSVHeader": {
+                                    "required": [
+                                        "CSVHeaderLocation"
+                                    ],
                                     "properties": {
                                         "CSVHeaderLocation": {
                                             "enum": [
@@ -566,6 +569,9 @@
                                     }
                                 },
                                 "CSVHeaderLocation": {
+                                    "required": [
+                                        "InputType"
+                                    ],
                                     "properties": {
                                         "InputType": {
                                             "enum": [
