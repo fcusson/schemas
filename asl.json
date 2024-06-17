@@ -540,6 +540,24 @@
                                         "CSV",
                                         "JSON"
                                     ]
+                                },
+                                "CSVHeaderLocation": {
+                                    "type": "string",
+                                    "enum": [
+                                        "FIRST_ROW",
+                                        "GIVEN"
+                                    ]
+                                }
+                            },
+                            "dependencies": {
+                                "CSVHeaderLocation": {
+                                    "properties": {
+                                        "InputType": {
+                                            "enum": [
+                                                "CSV"
+                                            ]
+                                        }
+                                    }
                                 }
                             },
                             "additionalProperties": true
