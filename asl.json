@@ -703,6 +703,13 @@
                             "BackoffRate": {
                                 "type": "number",
                                 "minimum": 0
+                            },
+                            "JitterStrategy": {
+                                "type": "string",
+                                "enum": [
+                                    "FULL",
+                                    "NONE"
+                                ]
                             }
                         },
                         "required": [
