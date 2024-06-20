@@ -556,18 +556,6 @@
                                 }
                             },
                             "dependencies": {
-                                "CSVHeader": {
-                                    "required": [
-                                        "CSVHeaderLocation"
-                                    ],
-                                    "properties": {
-                                        "CSVHeaderLocation": {
-                                            "enum": [
-                                                "GIVEN"
-                                            ]
-                                        }
-                                    }
-                                },
                                 "InputType": {
                                     "oneOf": [
                                         {
