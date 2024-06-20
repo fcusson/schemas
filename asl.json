@@ -556,21 +556,40 @@
                                 }
                             },
                             "dependencies": {
+                                "CSVHeader": {
+                                    "required": [
+                                        "CSVHeaderLocation"
+                                    ],
+                                    "properties": {
+                                        "CSVHeaderLocation": {
+                                            "enum": [
+                                                "GIVEN"
+                                            ]
+                                        }
+                                    }
+                                },
                                 "InputType": {
                                     "oneOf": [
                                         {
                                             "properties": {
                                                 "InputType": {
-                                                    "not": {
-                                                        "enum": [
-                                                            "CSV"
-                                                        ]
-                                                    }
+                                                    "enum": [
+                                                        "CSV"
+                                                    ]
                                                 }
                                             },
                                             "required": [
                                                 "CSVHeaderLocation"
                                             ]
+                                        },
+                                        {
+                                            "properties": {
+                                                "InputType": {
+                                                    "enum": [
+                                                        "JSON"
+                                                    ]
+                                                }
+                                            }
                                         }
                                     ]
                                 },
