@@ -611,7 +611,7 @@
                             "oneOf": [
                                 {
                                     "type": "string",
-                                    "pattern": "^arn:(?P<Partition>[^:\\n]*):(?P<Service>[^:\\n]*):(?P<Region>[^:\\n]*):(?P<AccountID>[^:\\n]*):(?P<Ignore>(?P<ResourceType>[^:\\/\\n]*)[:\\/])?(?P<Resource>.*)$"
+                                    "pattern": "^arn:[^:\\n]*:[^:\\n]*:[^:\\n]*:[^:\\n]*:[^:\\/\\n]*[:\\/]?.*$"
                                 },
                                 {
                                     "type": "string",
@@ -1025,7 +1025,7 @@
                     "oneOf": [
                         {
                             "type": "string",
-                            "pattern": "^arn:(?P<Partition>[^:\\n]*):(?P<Service>[^:\\n]*):(?P<Region>[^:\\n]*):(?P<AccountID>[^:\\n]*):(?P<Ignore>(?P<ResourceType>[^:\\/\\n]*)[:\\/])?(?P<Resource>.*)$"
+                            "pattern": "^arn:[^:\\n]*:[^:\\n]*:[^:\\n]*:[^:\\n]*:[^:\\/\\n]*[:\\/]?.*$"
                         },
                         {
                             "type": "string",
