@@ -522,6 +522,26 @@
                         "null"
                     ]
                 },
+                "ResultWriter": {
+                    "type": "object",
+                    "properties": {
+                        "Resource": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "pattern": "^arn:[^:\\n]*:[^:\\n]*:[^:\\n]*:[^:\\n]*:[^:\\/\\n]*[:\\/]?.*$"
+                                },
+                                {
+                                    "type": "string",
+                                    "pattern": "^\\$\\{[^\\}]+\\}$"
+                                }
+                            ]
+                        },
+                        "Parameters": {
+                            "type": "object"
+                        }
+                    }
+                },
                 "ResultPath": {
                     "type": [
                         "string",
