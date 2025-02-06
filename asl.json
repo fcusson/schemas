@@ -480,6 +480,9 @@
                 "Cause": {
                     "type": "string"
                 },
+                "CausePath": {
+                    "type": "string"
+                },
                 "Error": {
                     "type": "string"
                 }
